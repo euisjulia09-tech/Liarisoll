@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liarisol - Risol Premium Renyah & Lumer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPrimary: '#D97706',   // Orange hangat / Golden Brown Risol
+                        brandDark: '#7C2D12',      // Merah Bata / Cokelat Hangat
+                        brandAccent: '#FBBF24',    // Kuning Emas Cerah
+                        brandBgLight: '#FFFBEB',   // Krem Lembut Premium
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-brandBgLight text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white/90 backdrop-blur-md text-gray-800 sticky top-0 z-50 shadow-sm border-b border-orange-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-tight text-brandDark">LIA<span class="text-brandPrimary">RISOL</span></a>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm tracking-wide">
+                <a href="#home" class="hover:text-brandPrimary transition">Home</a>
+                <a href="#menu" class="hover:text-brandPrimary transition">Varian Menu</a>
+                <a href="#pembayaran" class="hover:text-brandPrimary transition">Cara Bayar</a>
+                <a href="#kontak" class="hover:text-brandPrimary transition">Hubungi Kami</a>
+            </div>
+            <a href="https://wa.me/62881023663672" target="_blank" class="bg-brandPrimary text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brandDark transition shadow-md transform hover:scale-105 duration-200">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden py-20 lg:py-28 bg-gradient-to-br from-amber-50 via-orange-50/50 to-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="inline-block bg-orange-100 text-brandDark px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Homemade & Selalu Fresh</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brandDark leading-tight">
+                    Kulit Renyah,<br>
+                    <span class="text-brandPrimary">Isian Lumer & Melimpah</span>
+                </h1>
+                <p class="text-gray-600 text-base md:text-lg max-w-md leading-relaxed">
+                    Nikmati kelezatan risoll premium dari **Liarisol**. Dibuat dengan balutan tepung panir krispi keemasan, menghasilkan tekstur renyah di luar dan kelezatan rasa yang pecah di dalam mulut!
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#menu" class="bg-brandPrimary text-white px-8 py-3.5 rounded-xl font-bold text-base hover:bg-brandDark transition transform hover:-translate-y-1 shadow-lg shadow-orange-500/20">
+                        Lihat Varian Rasa
+                    </a>
+                    <a href="https://wa.me/62881023663672" target="_blank" class="bg-white border-2 border-brandPrimary text-brandPrimary hover:bg-orange-50 px-8 py-3.5 rounded-xl font-bold text-base transition transform hover:-translate-y-1">
+                        Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center relative">
+                <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-brandAccent rounded-full filter blur-3xl opacity-20 -top-10 -right-10"></div>
+                
+                <!-- GAMBAR UTAMA: RISOL INDONESIA KRISPI -->
+                <div class="relative w-full max-w-md h-[350px] md:h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80" alt="Risol Goreng Krispi Indonesia" class="w-full h-full object-cover">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg flex justify-between items-center">
+                        <div>
+                            <p class="text-xs text-gray-500 font-semibold uppercase">Harga</p>
+                            <p class="text-2xl font-black text-brandDark">Rp 5.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></p>
+                        </div>
+                        <span class="bg-brandAccent text-brandDark text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm">Pasti Krispi! ⭐</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU / VARIAN RASA SECTION -->
+    <section id="menu" class="py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-brandPrimary font-bold text-sm uppercase tracking-widest">Pilihan Rasa</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brandDark mt-2">Varian Menu Liarisol</h2>
+            <div class="w-16 h-1 bg-brandPrimary mx-auto mt-4 rounded-full"></div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
+                
+                <!-- Varian 1: Rogut -->
+                <div class="bg-brandBgLight rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col group border border-orange-100/50">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=500&q=80" alt="Risol Rogut Lumer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-white text-brandDark text-xs font-bold px-3 py-1 rounded-full shadow">Lumer Gurih</span>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="text-xl font-bold text-brandDark text-left">Risol Rogut</h3>
+                            <p class="text-gray-600 text-sm text-left mt-2 leading-relaxed">
+                                Isian sayuran lembut, potongan kentang, dan wortel yang dipadukan dengan susu krim gurih kental. Lumer saat digigit!
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-orange-100 flex justify-between items-center">
+                            <span class="text-lg font-black text-brandPrimary">Rp 5.000</span>
+                            <a href="https://wa.me/62881023663672?text=Halo%20Liarisol,%20saya%20mau%20pesan%20Risol%20Rogut" target="_blank" class="bg-brandDark hover:bg-brandPrimary text-white text-xs font-bold px-4 py-2 rounded-lg transition">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Varian 2: Ayam Suwir -->
+                <div class="bg-brandBgLight rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col group border border-orange-100/50">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=500&q=80" alt="Risol Ayam Suwir" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-white text-brandDark text-xs font-bold px-3 py-1 rounded-full shadow">Isian Padat</span>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="text-xl font-bold text-brandDark text-left">Risol Ayam Suwir</h3>
+                            <p class="text-gray-600 text-sm text-left mt-2 leading-relaxed">
+                                Daging ayam melimpah yang disuwir halus, dimasak dengan bumbu rempah tradisional pilihan yang gurihnya meresap.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-orange-100 flex justify-between items-center">
+                            <span class="text-lg font-black text-brandPrimary">Rp 5.000</span>
+                            <a href="https://wa.me/62881023663672?text=Halo%20Liarisol,%20saya%20mau%20pesan%20Risol%20Ayam%20Suwir" target="_blank" class="bg-brandDark hover:bg-brandPrimary text-white text-xs font-bold px-4 py-2 rounded-lg transition">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Varian 3: Bolognese -->
+                <div class="bg-brandBgLight rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col group border border-orange-100/50">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=500&q=80" alt="Risol Bolognese" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-white text-brandDark text-xs font-bold px-3 py-1 rounded-full shadow">Kekinian</span>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="text-xl font-bold text-brandDark text-left">Risol Bolognese</h3>
+                            <p class="text-gray-600 text-sm text-left mt-2 leading-relaxed">
+                                Paduan modern saus daging bolognese yang asam manis gurih, lengkap dengan keju lumer di dalam balutan kulit risol krispi.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-orange-100 flex justify-between items-center">
+                            <span class="text-lg font-black text-brandPrimary">Rp 5.000</span>
+                            <a href="https://wa.me/62881023663672?text=Halo%20Liarisol,%20saya%20mau%20pesan%20Risol%20Bolognese" target="_blank" class="bg-brandDark hover:bg-brandPrimary text-white text-xs font-bold px-4 py-2 rounded-lg transition">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PEMBAYARAN -->
+    <section id="pembayaran" class="py-24 bg-brandBgLight">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-brandPrimary font-bold text-sm uppercase tracking-widest">Transaksi Mudah</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brandDark mt-2">Cara Pembayaran</h2>
+            <div class="w-16 h-1 bg-brandPrimary mx-auto mt-4 rounded-full"></div>
+            <p class="text-gray-600 mt-4 text-sm md:text-base">Pesanan kamu akan segera diproses setelah konfirmasi pembayaran:</p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 flex flex-col items-center">
+                    <div class="w-12 h-12 bg-orange-100 text-brandPrimary rounded-full flex items-center justify-center font-bold text-lg mb-4">1</div>
+                    <h4 class="font-bold text-lg text-brandDark">Transfer Bank</h4>
+                    <p class="text-gray-500 text-sm mt-2 text-center">BCA, Mandiri, BRI, atau BNI. Rekening akan diberikan admin via WhatsApp.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 flex flex-col items-center">
+                    <div class="w-12 h-12 bg-orange-100 text-brandPrimary rounded-full flex items-center justify-center font-bold text-lg mb-4">2</div>
+                    <h4 class="font-bold text-lg text-brandDark">E-Wallet & QRIS</h4>
+                    <p class="text-gray-500 text-sm mt-2 text-center">Tinggal scan QRIS resmi kami menggunakan DANA, OVO, GoPay, atau ShopeePay.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 flex flex-col items-center sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-orange-100 text-brandPrimary rounded-full flex items-center justify-center font-bold text-lg mb-4">3</div>
+                    <h4 class="font-bold text-lg text-brandDark">COD (Bayar di Tempat)</h4>
+                    <p class="text-gray-500 text-sm mt-2 text-center">Bayar langsung tunai ke kurir saat pesanan risol hangatmu sampai di rumah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-brandDark rounded-[2rem] text-white p-8 md:p-12 shadow-xl relative overflow-hidden grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold leading-tight">Mau Order Banyak atau Tanya Stok?</h2>
+                    <p class="text-orange-200 mt-4 text-sm leading-relaxed">
+                        Liarisol menerima pesanan dalam kondisi hangat siap makan, maupun kemasan *frozen* (beku) untuk stok cemilan Anda.
+                    </p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10 text-center md:text-left">
+                    <h4 class="font-bold text-brandAccent mb-1 text-sm uppercase">Hubungi WhatsApp:</h4>
+                    <a href="https://wa.me/62881023663672" target="_blank" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#1ebd53] text-white px-6 py-3.5 rounded-xl font-bold w-full transition shadow-lg gap-3 text-base mt-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.948 0c3.179.001 6.167 1.242 8.413 3.495 2.246 2.253 3.484 5.244 3.483 8.425-.004 6.59-5.341 11.938-11.892 11.938-2.015-.001-4.004-.51-5.772-1.482L0 24zm6.59-4.846c1.657.983 3.28 1.485 5.297 1.486 5.517 0 10.005-4.498 10.008-10.022.002-2.676-1.03-5.193-2.907-7.076C17.067 1.66 14.56 .624 11.947.624 6.427.624 1.939 5.122 1.936 10.646c-.001 2.054.54 4.053 1.566 5.792l-1.023 3.732 3.824-1.003z"/></svg>
+                        0881023663672
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandDark text-orange-200/60 py-8 text-center text-sm">
+        <p>&copy; 2026 <span class="font-bold text-brandAccent">Liarisol</span> - Kulit Renyah, Isian Lumer. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
